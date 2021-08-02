@@ -1,0 +1,56 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* Common Utilities */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Starting The styling of top portion */
+.first-section {
+  background-color: darkblue;
+  display: flex;
+  width: 1440px;
+  height: 677px;
+}
+img:hover {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  transition: transform 2s ease-in-out;
+}
+.half-container {
+  width: 720px;
+  height: 677px;
+}
+.half-container .title {
+  height: 230px;
+  width: 485px;
+  margin-left: 156px;
+  margin-top: 207px;
+  margin-bottom: 37px;
+}
+.title h1 {
+  color: white;
+  font-size: 64px;
+  line-height: 80px;
+  font-style: normal;
+}
+.button a {
+  background-color: #e02c6d;
+  width: 168px;
+  height: 44px;
+  margin-left: 156px;
+  text-align: center;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+}
+.button a i {
+  margin-left: 8px;
+}
+img {
+  position: absolute;
+  width: 388px;
+  height: 428px;
+  margin-right: 225px;
+  margin-top: 135px;
+}

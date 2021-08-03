@@ -4,14 +4,17 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+main {
+  width: 1440px;
+}
 /* Starting The styling of top portion */
 .first-section {
   background-color: darkblue;
   display: flex;
-  width: 1440px;
+  width: 100%;
   height: 677px;
 }
-img:hover {
+.banner:hover {
   transform: matrix(-1, 0, 0, 1, 0, 0);
   transition: transform 2s ease-in-out;
 }
@@ -47,10 +50,111 @@ img:hover {
 .button a i {
   margin-left: 8px;
 }
-img {
+.banner {
   position: absolute;
   width: 388px;
   height: 428px;
   margin-right: 225px;
   margin-top: 135px;
+}
+/* players section */
+.second-section {
+  width: 1440px;
+  background-color: white;
+}
+.players {
+  width: 1050px;
+  height: fit-content;
+  margin-top: 70px;
+  margin-left: 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  align-items: center;
+}
+.player-container {
+  width: 330px;
+  height: 474px;
+}
+.player {
+  height: 426px;
+  width: 300px;
+  margin-top: 27px;
+  border: 15px solid white;
+  box-shadow: 0px 0px 40px gray;
+  /* box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); */
+}
+.player .player-photo {
+  width: 300px;
+  height: 256px;
+}
+.player h2 {
+  font-size: 28px;
+  color: #18191f;
+  margin: 10px 0;
+  padding: 0;
+}
+.player p {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 10px 0;
+}
+/* Extra section */
+.video {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+.video iframe {
+  width: 100%;
+  height: 400px;
+}
+.third-section {
+  display: flex;
+}
+.half-container .calender {
+  margin-top: 80px;
+  margin-left: 50px;
+  height: 400px;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 2em repeat(6, 1fr);
+  grid-gap: 0.5em;
+}
+.date,
+.day {
+  background-color: cornflowerblue;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.other-month {
+  background-color: lightgray;
+}
+.day {
+  background-color: mediumseagreen;
+  font-size: 1.5em;
+}
+/* footer section */
+.footer-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  height: 110px;
+  width: 483px;
+}
+.icons i {
+  margin-left: 30px;
+}
+footer {
+  text-align: center;
+}
+footer p {
+  font-size: 18px;
+  line-height: 24px;
 }
